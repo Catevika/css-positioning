@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-800 text-zinc-50;
+  }
+
+  header {
+    @apply fixed flex flex-col w-screen bg-zinc-700/20 backdrop-blur-lg z-10 p-4;
+  }
+
+  main {
+    @apply p-8 max-w-5xl;
+  }
+
+  h1 {
+    @apply text-2xl font-semibold mt-2 mb-4;
+  }
+
+  h2 {
+    @apply text-xl mb-4 uppercase;
+  }
+
+  section {
+    @apply p-4 sm:p-10 mt-[180px] sm:mt-[100px] mb-4;
+  }
+
+  div {
+    @apply mb-4;
+  }
+
+  p {
+    @apply px-2;
+  }
+
+  li {
+    @apply mb-1 list-disc list-inside;
+  }
+
+  nav {
+    @apply flex gap-4;
+  }
+
+  button,
+  a {
+    @apply p-1.5 rounded-md bg-amber-400
+  }
+
+  button:hover,
+  a.active {
+    @apply bg-amber-600 font-bold;
+  }
+}
