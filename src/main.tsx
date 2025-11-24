@@ -11,7 +11,7 @@ import Sticky from './Sticky.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/css-positioning/">
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<App />} />
